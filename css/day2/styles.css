@@ -1,0 +1,27 @@
+           /*         Box Model      */
+        /* height , width , border , border-radius  */
+div{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+    border: 5px solid yellow;
+    /* border-left-color: green;
+    border-left-style: dashed; */
+    border-top: 4px dashed blue;
+    /* padding: 0px 10px 0px 10px; */
+    padding: 0px 20px;
+    margin: 20px;
+    margin:20px 40px 20px 30px;
+}
+
+h1{
+    /* if there is some default margin */
+    margin: 0px;
+}
+button{
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    padding: 0 20px 0 20px;
+}

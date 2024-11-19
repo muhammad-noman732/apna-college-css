@@ -1,0 +1,57 @@
+#container{
+    height: 500px;
+    width:80%;
+    border: 2px solid black;
+    margin: 10px auto;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    /* justify content - it sets distribution of space b/w and around content
+    items along flex main axis */
+    /* justify-content:start; */
+    flex-wrap: wrap;
+    /* align-items:start; */
+    /* align-items: baseline;  content ko same position p rakhta h imp h read docs */
+    /* flex-wrap: wrap-reverse;  it reverse direction according to cross axis  */
+    /* flex-direction: column; */
+    /* justify-content:space-evenly; */
+    /* justify-content: start; */
+    /* flex-wrap: wrap; */
+    /* align content - it sets distribution of space b/w and around content
+    items along flex cross axis*/
+    align-content: start;
+    /* align-content: baseline;  */
+}
+
+#org
+{
+    /* align-self: it is like align content but it use for individul item
+    where align item used for group of items and it has high priority; */
+    align-self:center;
+    align-self: baseline;  /* align according to parent  */
+    /* flex basic set basic width for row direction and height for column */
+    /* flex-basis: 50px; */
+        /* flex sizing   */
+    flex-grow: 1;
+    min-width: 330px;
+
+}
+
+#blue{
+     /* flex-basis: 450px; */
+     flex-grow: 2;
+     /* max-width: 400px; jitna bhi grow krlo is width se bre ga nhi */
+}
+
+#container div{
+    width: 50px;
+    height: 100px;
+    color : white;
+    text-align: center;
+    font-size : 1.5em; 
+}
+
+h1{
+    text-align: center;
+}
+

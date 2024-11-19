@@ -1,0 +1,188 @@
+.demo{
+    color: orange;
+    text-decoration: red underline;
+   
+}
+.demo2{
+    background: blue;
+    color: white;
+}
+.demo3{
+    background-color: black;
+    color: white;
+}
+
+.head
+{
+    text-align: right;
+    /* border: 1px solid black; */
+    width: 50%;
+    /* here text as right but show in center as width is 50% and it is relative to it */
+    font-weight: normal;
+    font-family: arial;
+    
+}
+
+.para{
+
+/* font weight 
+normal 400
+bold 700
+bolder and lighter according to parent
+ */
+
+ font-weight: bold;
+
+ /*  line height  */
+
+ line-height:2;
+}
+
+h3{
+
+ /*
+   text decoration property...
+       
+  */
+  text-decoration:pink line-through;
+}
+
+h4{
+    text-decoration:  blue overline;
+    /* letter spacing for space between letters*/
+    letter-spacing: 7px;
+}
+
+h5{
+    /*  units of css
+    
+    absolute-- dont use it for responsive website because it is fixed and same on all devices
+    realtive rem , em  
+    */
+    font-size: 20px;
+}
+
+/*  font family  
+type of font
+*/
+
+/*  adjacent sibling combinator like p and then it has h2 or any other  */
+/* these have advantages over child bcz in child we canot call directly desendent selectors */
+
+ p + h2{
+    /* change styles for heading write after p */
+    color: rebeccapurple;  /* change color of h2 */
+    text-decoration: underline;
+ }
+ nav a{
+    color:red;
+ } 
+
+                    /* child combinator   */
+ div > input{
+    background-color: black;
+ }
+
+ /* nav>ul>li{
+    color: red;
+ }
+ nav>ul>li> a{
+    color: red;
+ }
+  */
+  
+          /* Attribute selector  */
+input[type="text"]{
+    color: green;
+}
+
+input[type="password"]{
+    color: red;
+}
+
+
+                 /* practice question css  */
+     /* what will be the color of text hello world  */
+div.greetDiv .greet{
+       color: green;
+}
+
+.greetDiv p.greet{
+    color: red;
+}
+
+.greetDiv .greet{
+    color: blue;
+}
+/* the above satuation can be solved by specifity 
+specifity= id class tag
+1st have specifity = 021  0 id 2 classes and 1 tagname
+2nd have specifity  =021  0 id 2 classes and 1 tagname
+3rd have specifity  =020  0 id 2 classes and 0 tagname
+
+so here specifity of one and 2 is greater than 3 but these 2 have same so we select on 
+the base of cascading rule jo bad m aye ga usi ka prefer ki jae ga 
+
+so color will be red
+ */
+
+.bt1{
+    color: red;
+}
+.bt2{
+    color: green;
+}
+
+                                   /* pseudo classes 
+            1- :hover
+            2- :active
+            3- :checked
+            4 :nth-of-type
+            */
+button:hover{
+    background-color: black;
+    color:white;
+}
+button:active{
+    /* when click on the button */
+    background-color: pink; 
+}
+/* when chechk */
+input[type ="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+/* n-th-of-type */
+div:nth-of-type(2){
+    /* this will change the styles of 2nd div */
+    background-color: yellow;
+    color: red;
+}
+div:nth-of-type(2n){
+    /* this will change the styles of every 2nd div even div */
+    background-color: yellow !important;
+    color: red;
+}
+
+/* paseudo element 
+a keyword added to selector that lets you style a specific part of selected element
+
+::first-letter
+::first-line
+::selection
+*/
+
+.haeding1{
+    color: green;
+}
+/* paseudo element */
+h1::first-letter{
+    color: red;
+}
+p::first-line{
+color: rgb(251, 95, 5);
+}
+p::selection{
+    color: red;
+}
+

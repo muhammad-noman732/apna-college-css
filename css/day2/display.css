@@ -1,0 +1,105 @@
+/* display property */
+/* block and inline */
+
+span{
+    width: 200px;
+    height: 100px;
+    /*  height and width does not apply on inline element */
+    background-color: rgb(218, 41, 41);
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+/* padding and margin also only applied in left and right not in tp and bottom */
+}
+
+/* but in case of block element we can apply it in all sides and also set 
+width and height */
+
+
+/* 
+div{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+} */
+
+           /*  inline-block */
+/*  
+div{
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    background-color: red;
+    margin: 5px;
+      if we try to display it inline than width and height will not 
+    apply on it and also margin and padding at top-bottom 
+    so have to use mixture of dispaly and inline is diplay-inline ;
+     display: inline-block; 
+}    */
+
+/* units in css (relative) */
+h1{
+    /* % it is taken according to parent element  */
+    width: 50%; 
+}
+
+/* #outer{
+    width: 400px;
+    height:400px;
+    margin: 40px;
+   background-color:green;
+}
+
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 20%; here set margin of inner element behalf of uter
+} */
+
+/*  we can also change the size of text relative to parent 
+sp we use em unit */
+#outer{
+    width: 400px;
+    height:400px;
+    margin: 40px;
+   background-color:green;
+   font-size: 10px;
+}
+
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 20%; 
+    font-size: 3em;  
+    /* here font size will be 30px 3% of parent  */
+    padding: 1em ;/* padding also will be 30px because of font size  */
+}
+
+button{
+    border: 5px solid green;
+    border-radius: 20px;
+    font-size: 40px;
+    /* padding-left: 50px;
+    padding-right:50px ; */
+    /* in future if font size increases or decreases than padding will be affected
+    so use em so padding will remain same according to font size  */
+    padding-left: 1em;
+    padding-right:1em ;
+ }
+
+ /*  drawe back of em */
+
+ section{
+    font-size: 15px;
+ }
+div{
+    /* font-size: 2em; */
+    /* in this case size of last div will be increase relative to parent 
+    so it is not good in some cases  so there is another unit rem */
+
+    /* rem set the size according to root element */
+    font-size: 2rem;
+    /* here all div inside each other has size relative to rot section */
+}
