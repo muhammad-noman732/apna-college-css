@@ -1,0 +1,65 @@
+.container{
+    /* diplay property of grid is block if we want it to make inline 
+    then use inline-grid also for dlex(most imp) */
+
+    width:600px;
+    height: 380px;
+    border: 2px solid black;
+    background-color: yellow;
+    /* display: grid; */
+    display: inline-grid;
+    /* grid-template-rows:50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px ; */
+    /* grid-template-columns: auto auto; auto is used for automatic space
+    distribute between given number of columns but it is not good
+    idea as it have space accordingto elements in it so we will hardcorde the value */
+
+    /* grid template repeat .. to divide the available space equaly it is god method */
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    /* grid gap */
+    /* row-gap: 20px;
+    column-gap: 40px; */
+    grid-gap: 20px 30px;
+
+    /* properties of grid  */
+    /* place horizontally */
+    /* justify-items: center; */
+    /* place vertically */
+    /* align-items: center; */
+
+    /* if apply same properties on both column and row then use place-items */
+    place-items: center;
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    border:2px solid black;
+    background-color: green;
+    text-align: center;  
+}
+.one{
+    /* justify-self: end;
+       align-self: start; */
+     /* if apply same properties on both column and row on individual then use place-self */
+     place-self: start;
+}
+
+/*  */
+/* .one{
+    /* grid columns 
+     to specify the position of item in column*/
+
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* shorthand*/
+    grid-column: 1/3;
+    /* span keyword when deciding a grid column  */
+    /* grid-column: 1 / span 3; 1 se start and next 3 columns */
+}
+.two{
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row: 1/3;
+} */
